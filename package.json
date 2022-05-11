@@ -1,6 +1,6 @@
 {
   "name": "blacksmith-engine",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Blacksmith is a Type-Script ECS game engine to aid API or Multiplayer frameworks such as Colyseus.",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
