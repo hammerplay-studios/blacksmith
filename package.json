@@ -1,0 +1,38 @@
+{
+  "name": "blacksmith",
+  "version": "0.0.1",
+  "description": "Blacksmith is a Type-Script ECS game engine to aid API or Multiplayer frameworks such as Colyseus.",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "node node_modules/rimraf/bin lib",
+    "build": "npm run clean && tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hammerplay-studios/blacksmith.git"
+  },
+  "keywords": [
+    "ECS",
+    "game",
+    "engine",
+    "colyseus"
+  ],
+  "author": "Joshua Jebadurai",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hammerplay-studios/blacksmith/issues"
+  },
+  "homepage": "https://github.com/hammerplay-studios/blacksmith#readme",
+  "devDependencies": {
+    "@types/node-fetch": "^2.6.1",
+    "copyfiles": "^2.4.1",
+    "rimraf": "^2.7.1",
+    "typescript": "^3.4.5"
+  },
+  "dependencies": {
+    "@flyover/box2d": "^1.0.1",
+    "game-loops": "^1.1.0",
+    "user": "^0.0.0"
+  }
+}
