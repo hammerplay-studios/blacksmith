@@ -46,6 +46,7 @@ export class GameObject implements IUpdate {
   }
 
   public getComponent(ctor: typeof Component): Component {
+    if (this._components == null) return null;
     if (!this._components.has(ctor.name)) return null;
 
     return this._components.get(ctor.name);
