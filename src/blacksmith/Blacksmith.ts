@@ -64,6 +64,9 @@ export class Blacksmith {
     }
   }
 
+
+  public autoSimulation: boolean = true;
+
   private SimulationLoop(dt: number, t: number) {
     if (this.triggerExit) {
       for (let i = 0; i < this._gameObjects.length; i++) {
@@ -78,7 +81,8 @@ export class Blacksmith {
 
     if (this.triggerGC) this.GC();
 
-    this._physicsSystem2D.step();
+    if (this.autoSimulation)
+      this._physicsSystem2D.step();
 
     if (this.triggerExit) {
       clearInterval(this.interval);
