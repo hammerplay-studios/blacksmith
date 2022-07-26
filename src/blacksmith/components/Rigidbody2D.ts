@@ -1,6 +1,6 @@
 import { b2Body, b2BodyDef, b2BodyType } from "@flyover/box2d";
-import { Component } from "../base/Component";
-import { Vector2 } from "../base/Vector2";
+import { Component } from "../core/scene/component";
+import { Vec2 } from "../core/math/vec2";
 import { PhysicsSystem2D, PTM_RATIO } from "../PhysicsSystem2D";
 import { Transform2D } from "./Transform2D";
 
@@ -64,8 +64,8 @@ export class Rigidbody2D extends Component {
     return this._angularVelocity;
   }
 
-  protected _linearVelocity: Vector2 = new Vector2();
-  public set linearVelocity(velocity: Vector2) {
+  protected _linearVelocity: Vec2 = new Vec2();
+  public set linearVelocity(velocity: Vec2) {
     this._linearVelocity = velocity;
     if (this.body != null)
       this.body.SetLinearVelocity({
@@ -74,7 +74,7 @@ export class Rigidbody2D extends Component {
       });
   }
 
-  public get linearVelocity(): Vector2 {
+  public get linearVelocity(): Vec2 {
     return this._linearVelocity;
   }
 

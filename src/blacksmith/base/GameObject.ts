@@ -1,6 +1,6 @@
 import { Blacksmith } from "../Blacksmith";
 import { Collider2D } from "../components/Collider2D";
-import { Component } from "./Component";
+import { Component } from "../core/scene/component";
 import { IUpdate } from "./Lifecycles";
 
 type constr<T> = { new (...args: unknown[]): T };

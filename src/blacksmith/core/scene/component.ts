@@ -1,5 +1,5 @@
-import { Collider2D } from "../components/Collider2D";
-import { GameObject } from "./GameObject";
+import { Collider2D } from "../../components/Collider2D";
+import { GameObject } from "../../base/GameObject";
 import {
   IAwake,
   IOnCollisionEnter2D,
@@ -9,7 +9,7 @@ import {
   IOnEnable,
   IStart,
   IUpdate,
-} from "./Lifecycles";
+} from "../../base/Lifecycles";
 
 export interface IComponent
   extends IAwake,

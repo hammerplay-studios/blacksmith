@@ -1,5 +1,5 @@
 import { b2Fixture } from "@flyover/box2d";
-import { Component } from "../base/Component";
+import { Component } from "../core/scene/component";
 import { PhysicsSystem2D } from "../PhysicsSystem2D";
 import { Rigidbody2D } from "./Rigidbody2D";
 import { Transform2D } from "./Transform2D";
